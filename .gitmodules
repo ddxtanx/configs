@@ -1,0 +1,6 @@
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/ddxtanx/nvim_setup
+[submodule "polybar-scripts"]
+	path = polybar-scripts
+	url = https://github.com/polybar/polybar-scripts
