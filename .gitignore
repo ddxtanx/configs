@@ -1,0 +1,6 @@
+*
+!nvim
+!polybar/
+!i3/
+!polybar-scripts
+!.gitignore
