@@ -10,7 +10,7 @@ bindsym $mod+u border none
 bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
-font AurulentSansMono 16
+font AurulentSansMono Nerd Font 25px
 
 floating_modifier $mod
 
