@@ -1,7 +1,8 @@
 set $mod Mod4
 
 exec xmodmap ~/.Xmodmap
-exec ~/.local/opt/start_programs.sh
+exec --no-startup-id ~/.local/opt/start_programs.sh
+exec --no-startup-id ~/.config/polybar/launch.sh --colorblocks
 new_window pixel 1
 new_float normal
 
@@ -25,6 +26,7 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id rofi -show drun
 bindsym $mod+Shift+space exec --no-startup-id rofi -show run
 bindsym $mod+Ctrl+space exec --no-startup-id rofi -show window
+bindsym $mod+Shift+b exec --no-startup-id rofi-bluetooth
 
 # change focus
 bindsym $mod+h focus left
@@ -51,7 +53,7 @@ bindsym $mod+Shift+Right move right
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
 bindsym $mod+b workspace back_and_forth
-bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
+# bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
 bindsym $mod+Shift+h split h;exec notify-send 'tile horizontally'
