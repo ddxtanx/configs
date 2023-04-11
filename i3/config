@@ -11,7 +11,7 @@ bindsym $mod+u border none
 bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
-exec --no-startup-id feh --bg-scale ~/Desktop/Wallpapers/Default
+exec --no-startup-id feh --bg-scale --randomize ~/Desktop/Wallpapers/Default/*
 font pango:AurulentSansMono Nerd Font 12px
 
 floating_modifier $mod
