@@ -1,5 +1,6 @@
 set $mod Mod4
 
+exec xmodmap ~/.Xmodmap
 exec ~/.local/opt/start_programs.sh
 new_window pixel 1
 new_float normal
