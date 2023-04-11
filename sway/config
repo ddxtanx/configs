@@ -9,6 +9,7 @@ hide_edge_borders none
 
 exec --no-startup-id pkill -f random_wallpaper
 exec --no-startup-id ~/.config/swaybg/random_wallpaper.sh &
+exec --no-startup-id ~/.config/waybar/waybar.sh
 font pango:AurulentSansMono Nerd Font 12px
 
 floating_modifier $mod
