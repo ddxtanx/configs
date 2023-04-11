@@ -11,8 +11,8 @@ bindsym $mod+u border none
 bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
-exec --no-startup-id feh --bg-scale ~/Desktop/Wallpapers/Default
-font AurulentSansMono Nerd Font 25px
+exec --no-startup-id feh --bg-scale --randomize ~/Desktop/Wallpapers/Default/*
+font pango:AurulentSansMono Nerd Font 12px
 
 floating_modifier $mod
 
@@ -56,7 +56,7 @@ bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_
 # split orientation
 bindsym $mod+Shift+h split h;exec notify-send 'tile horizontally'
 bindsym $mod+Shift+v split v;exec notify-send 'tile vertically'
-bindsym $mod+q split toggle
+# bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
