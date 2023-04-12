@@ -1,6 +1,6 @@
 set $mod Mod4
 
-exec xmodmap ~/.Xmodmap
+output eDP-1 scale 1.75
 exec ~/.local/opt/start_programs.sh
 default_border pixel 1
 default_floating_border pixel 1

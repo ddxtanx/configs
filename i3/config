@@ -1,7 +1,8 @@
 set $mod Mod4
 
 exec xmodmap ~/.Xmodmap
-exec --no-startup-id ~/.local/opt/start_programs.sh
+
+exec --no-startup-id ~/.local/opt/start_programs.sh & > ~/.local/state/aw.log
 exec --no-startup-id ~/.config/polybar/launch.sh --colorblocks
 new_window pixel 1
 new_float normal
