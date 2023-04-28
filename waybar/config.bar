@@ -5,7 +5,7 @@
     "name": "top",
     "layer": "top",
     "position": "top",
-    "modules-right": [ "sway/mode", "tray", "custom/containers", "custom/vm", "disk", "memory", "cpu", "network", "pulseaudio", "backlight", "battery", "idle_inhibitor", "custom/bluelightfilter", "clock", "clock#utc", "custom/notification"],
+    "modules-right": [ "sway/mode", "tray", "disk", "memory", "cpu", "network", "pulseaudio", "backlight", "battery", "clock", "custom/notification"],
     "modules-center": [ "sway/scratchpad" ],
     "modules-left": ["sway/workspaces"],
     "sway/workspaces": {
@@ -13,7 +13,7 @@
         "alphabetical_sort": true
     },
     "clock": {
-        "format": "{:%a %d %b %H:%M}",
+        "format": "{%D %r}",
         "tooltip": true,
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },

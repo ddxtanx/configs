@@ -1,20 +1,20 @@
 set $mod Mod4
 
-output eDP-1 scale 1.75
+output eDP-1 scale 2
 exec ~/.local/opt/start_programs.sh &
 default_border pixel 1
 default_floating_border pixel 1
 
 hide_edge_borders none
 
-exec --no-startup-id pkill -f random_wallpaper
-exec --no-startup-id ~/.config/swaybg/random_wallpaper.sh &
+exec --no-startup-id ~/.config/swaybg/random_wallpaper.sh & > ~/.local/state/swaybg.log
 exec --no-startup-id ~/.config/waybar/waybar.sh &
+exec --no-startup-id swaync
 font pango:AurulentSansMono Nerd Font 12px
 
 floating_modifier $mod
 
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec --no-startup-id alacritty -e zellij
 
 # Window kill command
 bindsym $mod+q kill
@@ -23,6 +23,11 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id rofi -show drun
 bindsym $mod+Shift+space exec --no-startup-id rofi -show run
 bindsym $mod+Ctrl+space exec --no-startup-id rofi -show window
+bindsym $mod+Shift+n exec swaync-client -t -sw
+
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # Bluetooth settings
 bindsym $mod+Shift+b exec rofi-bluetooth
@@ -279,8 +284,8 @@ gaps outer 20
 # set power-manager and volume control
 exec --no-startup-id mate-power-manager
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 -q set Master 2db- unmute
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 6.25%+ unmute
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 6.25%- unmute
 bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 
 # touchpad on and off controller on laptop with Fn+<touchpad control functional key>
