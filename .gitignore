@@ -13,3 +13,11 @@
 !sway/*
 !sddm-astronaut-theme
 !.gitignore
+!sioyek
+!sioyek/*
+!alacritty
+!alacritty/*
+!zellij
+!zellij/*
+!swaybg
+!swaybg/*

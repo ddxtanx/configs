@@ -1,7 +1,8 @@
 set $mod Mod4
 
 output eDP-1 scale 2
-exec ~/.local/opt/start_programs.sh &
+exec --no-startup-id source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+exec --no-startup-id ~/.local/opt/start_programs.sh &
 default_border pixel 1
 default_floating_border pixel 1
 
@@ -13,8 +14,9 @@ exec --no-startup-id swaync
 font pango:AurulentSansMono Nerd Font 12px
 
 floating_modifier $mod
+for_window [app_id="org.kde.kalgebra"] floating enable
 
-bindsym $mod+Return exec --no-startup-id alacritty -e zellij
+bindsym $mod+Return exec --no-startup-id alacritty -e ~/.start_zellij.sh
 
 # Window kill command
 bindsym $mod+q kill
@@ -168,10 +170,7 @@ for_window [class="Xfburn"] floating enable
 for_window [urgent=latest] focus
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
-
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+c swaymsg reload
 
 bindcode Mod4+49 exec --no-startup-id ~/.config/i3/i3empty.py
 bindcode Mod4+Shift+49 exec --no-startup-id ~/.config/i3/i3empty.py --move next
@@ -292,3 +291,12 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 bindsym XF86TouchpadOn exec --no-startup-id synclient Touchpadoff=0
 bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
 
+set $lock_bg ~/Desktop/Wallpapers/Default/8E4E6695-52E8-475E-AC3D-2FFB243BDC23.jpeg
+
+bindsym $mod+End exec swaylock -i $lock_bg
+
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 000000 -i $lock_bg' \
+         timeout 600 'swaymsg "output * dpms off"' \
+              resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -f -c 000000 -i $lock_bg'
