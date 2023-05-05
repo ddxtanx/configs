@@ -7,3 +7,6 @@
 [submodule "sddm-astronaut-theme"]
 	path = sddm-astronaut-theme
 	url = https://github.com/Keyitdev/sddm-astronaut-theme
+[submodule "alacritty/themes"]
+	path = alacritty/themes
+	url = https://github.com/alacritty/alacritty-theme
