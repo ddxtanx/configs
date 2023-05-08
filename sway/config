@@ -7,7 +7,7 @@ default_floating_border pixel 1
 
 hide_edge_borders none
 
-exec --no-startup-id ~/.config/swww/wallpaper_daemon.sh > ~/.local/state/swww.log 2>&1 &
+exec --no-startup-id ~/.config/mpvpaper/wallpaper_daemon.sh > ~/.local/state/mpvpaper-daemon.log 2>&1 &
 exec --no-startup-id ~/.config/waybar/waybar.sh &
 exec --no-startup-id swaync
 font pango:AurulentSansMono Nerd Font 12px
