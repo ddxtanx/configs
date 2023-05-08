@@ -1,5 +1,5 @@
 #!/bin/bash
 while true; do
     $HOME/.config/mpvpaper/randomize_wallpaper.sh
-    sleep 10
+    sleep 300
 done
