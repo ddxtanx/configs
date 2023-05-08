@@ -35,7 +35,7 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 # Bluetooth settings
 bindsym $mod+Shift+b exec rofi-bluetooth
 
-bindsym $mod+Shift+w exec ~/.config/swww/random_wallpaper.sh > ~/.local/state/swww-next.log 2>&1 &
+bindsym $mod+Shift+w exec ~/.config/mpvpaper/randomize_wallpaper.sh > ~/.local/state/mpvpaper-next.log 2>&1 &
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
