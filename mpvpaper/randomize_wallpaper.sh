@@ -7,4 +7,5 @@ env $MESA_FLAGS mpvpaper -vv -p -o 'hwdec=auto loop hwdec-codecs=all vo=gpu-next
 NEXT_PID=$!
 
 kill $MPV_PIDS
+pkill -f wallpaper_daemon -SIGUSR1
 
