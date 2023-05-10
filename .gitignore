@@ -26,3 +26,4 @@
 !mpvpaper
 !mpvpaper/*
 !generate_wallpaper.sh
+sway/machine_specific_config
