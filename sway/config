@@ -180,6 +180,7 @@ bindcode Mod4+Shift+49 exec --no-startup-id ~/.config/i3/i3empty.py --move next
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec 'swaynag -m "Really exit sway?" -b "Yes, Exit" "swaymsg exit" -s "Nevermind"'
+bindsym $mod+Shift+Escape exec '$HOME/.config/sway/generate_lockscreen.sh'
 
 # Set shut down, restart and locking features
 # Resize window (you can also use the mouse for that)
