@@ -26,6 +26,5 @@
 !mpvpaper
 !mpvpaper/*
 !generate_wallpaper.sh
-!get_monitor.sh
 !wallpaper_display_command.sh
 sway/machine_specific_config
