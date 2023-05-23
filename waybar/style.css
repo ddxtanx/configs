@@ -1,5 +1,5 @@
-#waybar {
-    font-family: "Hasklug Nerd Font Mono", Cantarell, Noto Sans, sans-serif;
+* {
+    font-family: "Hasklug Nerd Font Mono", "Font Awesome 6 Free";
     font-size: 12px;
 }
 
