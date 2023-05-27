@@ -3,6 +3,11 @@
     font-size: 12px;
 }
 
+#custom-notification {
+    font-size: 24px;
+  /* font-family: "NotoSansMono Nerd Font"; */
+}
+
 #window {
     padding: 0 10px;
 }
