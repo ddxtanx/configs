@@ -7,7 +7,7 @@ default_floating_border pixel 1
 hide_edge_borders none
 
 exec --no-startup-id ~/.config/mpvpaper/wallpaper_daemon.sh > ~/.local/state/mpvpaper-daemon.log 2>&1 &
-exec --no-startup-id ~/.config/waybar/waybar.sh &
+exec --no-startup-id ~/.config/waybar/waybar.sh > ~/.local/state/waybar.log 2>&1 &
 exec --no-startup-id swaync
 font pango:AurulentSansMono Nerd Font 12px
 
@@ -29,10 +29,10 @@ bindsym $mod+Return exec --no-startup-id alacritty -e ~/.start_zellij.sh
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+space exec --no-startup-id rofi -show drun
-bindsym $mod+Shift+space exec --no-startup-id rofi -show run
-bindsym $mod+Ctrl+space exec --no-startup-id rofi -show window
-bindsym $mod+e exec --no-startup-id rofimoji
+bindsym $mod+space exec --no-startup-id wofi --show drun
+bindsym $mod+Shift+space exec --no-startup-id wofi --show run
+bindsym $mod+Ctrl+space exec --no-startup-id python3 $HOME/.config/sway/wofi-window.py
+bindsym $mod+e exec --no-startup-id wofi-emoji
 bindsym $mod+Shift+n exec swaync-client -t -sw
 bindsym $mod+Shift+s exec grim -g "$(slurp)"
 
@@ -41,8 +41,9 @@ bindsym XF86AudioNext exec --no-startup-id waybar-mpris --send  next
 bindsym XF86AudioPrev exec --no-startup-id waybar-mpris --send  prev
 
 # Bluetooth settings
-bindsym $mod+Shift+b exec rofi-bluetooth
 bindsym $mod+Alt+b exec sudo systemctl restart bluetooth
+
+bindsym $mod+Alt+w exec pkill -f waybar; ~/.config/waybar/waybar.sh &
 
 bindsym $mod+Shift+w exec ~/.config/mpvpaper/randomize_wallpaper.sh > ~/.local/state/mpvpaper-next.log 2>&1 &
 # change focus
