@@ -82,7 +82,6 @@
     },
     "clock": {
         "interval": 1,
-        "timezone": "America/Chicago",
         "tooltip-format": "<big>{:%D %r}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%r}",
         "format": "{:%D %r}"
