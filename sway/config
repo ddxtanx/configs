@@ -23,7 +23,7 @@ for_window [app_id="zoom" title="Zoom Meeting"] floating disable
 
 for_window [app_id="zoom" title="Zoom - Free Account"] floating disable
 
-bindsym $mod+Return exec --no-startup-id alacritty -e ~/.start_zellij.sh
+bindsym $mod+Return exec --no-startup-id alacritty -e $HOME/.config/zellij/start_zellij.sh
 
 # Window kill command
 bindsym $mod+q kill
@@ -34,7 +34,7 @@ bindsym $mod+Shift+space exec --no-startup-id wofi --show run
 bindsym $mod+Ctrl+space exec --no-startup-id python3 $HOME/.config/sway/wofi-window.py
 bindsym $mod+e exec --no-startup-id wofi-emoji
 bindsym $mod+Shift+n exec swaync-client -t -sw
-bindsym $mod+Shift+s exec grim -g "$(slurp)"
+bindsym $mod+Shift+s exec XDG_SCREENSHOTS_DIR=/home/ddxtanx/Screenshots/ grimshot save area
 
 bindsym XF86AudioPlay exec --no-startup-id waybar-mpris --send toggle
 bindsym XF86AudioNext exec --no-startup-id waybar-mpris --send  next
@@ -281,7 +281,7 @@ bindsym XF86TouchpadOn exec --no-startup-id synclient Touchpadoff=0
 bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
 
 exec swayidle -w \
-         timeout 300 '$HOME/.config/sway/generate_lockscreen.sh' \
+         timeout 600 '$HOME/.config/sway/generate_lockscreen.sh' \
          before-sleep '$HOME/.config/sway/generate_lockscreen.sh'
 
 exec ~/.local/opt/start_programs.sh
