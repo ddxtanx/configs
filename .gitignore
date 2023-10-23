@@ -1,4 +1,4 @@
-/*
+*
 !nvim/
 !nvim/*
 !polybar/
@@ -19,6 +19,7 @@
 !alacritty/*
 !zellij
 !zellij/*
+!zellij/.*
 !swaybg
 !swaybg/*
 !swww
