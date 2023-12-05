@@ -1,7 +1,6 @@
 include /etc/sway/config.d/*
 include $HOME/.config/sway/machine_specific_config
 
-#exec --no-startup-id source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 default_border pixel 1
 default_floating_border pixel 1
 
@@ -283,7 +282,6 @@ bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
 
 exec swayidle -w \
          timeout 600 '$HOME/.config/sway/generate_lockscreen.sh' \
-         before-sleep '$HOME/.config/sway/generate_lockscreen.sh'
 
 exec ~/.local/opt/start_programs.sh
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
