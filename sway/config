@@ -4,8 +4,8 @@ exec --no-startup-id /usr/lib/kdeconnectd
 
 input type:keyboard {
         xkb_layout us
-        xkb_variant altgr-intl
-        xkb_options "compose:lalt"
+        xkb_variant "" 
+        xkb_options "compose:ralt,control:nocaps"
 }
 
 default_border pixel 1
