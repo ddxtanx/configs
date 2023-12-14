@@ -2,6 +2,12 @@ include /etc/sway/config.d/*
 include $HOME/.config/sway/machine_specific_config
 exec --no-startup-id /usr/lib/kdeconnectd
 
+input type:keyboard {
+        xkb_layout us
+        xkb_variant altgr-intl
+        xkb_options "compose:lalt"
+}
+
 default_border pixel 1
 default_floating_border pixel 1
 
@@ -287,6 +293,4 @@ exec swayidle -w \
 exec ~/.local/opt/start_programs.sh
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr -r
-input "type:keyboard" {
-        xkb_options compose:lalt
-}
+
