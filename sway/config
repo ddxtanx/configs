@@ -296,8 +296,4 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr -r
 
 # Application Autostarts
-exec --no-startup-id gtk-launch Alacritty && sleep 3 && swaymsg '[app_id="alacritty"]' move container to workspace 1 >> ~/.local/state/autolaunch.log 2>&1
-exec --no-startup-id gtk-launch firefox-nightly && sleep 3 && swaymsg '[app_id="firefox-nightly"]' move container to workspace 2 >> ~/.local/state/autolaunch.log 2>&1
-exec --no-startup-id gtk-launch org.mozilla.Thunderbird && sleep 3 && swaymsg '[app_id="thunderbird"]' move container to workspace 3 >> ~/.local/state/autolaunch.log 2>&1
-exec --no-startup-id gtk-launch discord && sleep 3 && swaymsg '[app_id="discord"]' move container to workspace 4 >> ~/.local/state/autolaunch.log 2>&1
-
+include $HOME/.config/sway/setup_windows
