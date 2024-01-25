@@ -7,7 +7,8 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/waybar-mpris"],
     "modules-center": ["sway/window"],
-    "modules-right": ["custom/bluetooth-battery", "pulseaudio", "network", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray", "custom/notification"],
+    "modules-right": ["custom/bluetooth-battery", "pulseaudio", "network", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray", "idle_inhibitor", "custom/notification"],
+
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
