@@ -2,7 +2,7 @@
 MONITOR=$(~/.config/get_monitor.sh)
 mkdir ~/.local/state/lockscreen.lock || exit 1
 
-pkill -f swayidle --signal 9
+pkill -f "idle.sh"
 
 swayidle timeout 15 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' >> ~/.local/state/idle.log 2>&1 &
 DPMS_PID=$!
