@@ -14,7 +14,7 @@ default_floating_border pixel 1
 hide_edge_borders none
 focus_follows_mouse no
 
-exec --no-startup-up /usr/bin/rm -rf ~/.local/state/*.lock
+exec --no-startup-id /usr/bin/rm -rf ~/.local/state/*.lock
 exec --no-startup-id ~/.config/mpvpaper/wallpaper_daemon.sh > ~/.local/state/mpvpaper-daemon.log 2>&1 &
 exec --no-startup-id ~/.config/waybar/waybar.sh > ~/.local/state/waybar.log 2>&1 &
 exec --no-startup-id swaync
