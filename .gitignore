@@ -30,5 +30,6 @@
 !generate_wallpaper.sh
 !wallpaper_display_command.sh
 sway/machine_specific_config
+sway/setup_windows
 !bottom
 !spotifyd
