@@ -16,7 +16,7 @@ dot_marker = true
 # Whether to put the CPU legend to the left.
 #left_legend = false
 # Whether to set CPU% on a process to be based on the total CPU or just current usage.
-current_usage = false
+current_usage = true
 # Whether to set CPU% on a process to be based on the total CPU or per-core CPU% (not divided by the number of cpus).
 #unnormalized_cpu = false
 # Whether to group processes with the same name together by default.
@@ -52,7 +52,7 @@ group_processes = true
 # Remove space in tables
 #hide_table_gap = false
 # Show the battery widgets
-#battery = false
+battery = true
 # Disable mouse clicks
 #disable_click = false
 # Built-in themes.  Valid values are "default", "default-light", "gruvbox", "gruvbox-light", "nord", "nord-light"
