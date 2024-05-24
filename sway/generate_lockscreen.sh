@@ -5,7 +5,7 @@ mkdir ~/.local/state/lockscreen.lock || exit 1
 pkill -f "idle.sh"
 rm -rf ~/.local/state/idle.lock
 
-swayidle timeout 15 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' >> ~/.local/state/idle.log 2>&1 &
+swayidle timeout 15 '/usr/bin/swaymsg "output * dpms off"' resume '/usr/bin/swaymsg "output * dpms on"' >> ~/.local/state/idle.log 2>&1 &
 DPMS_PID=$!
 
 WALLPAPER=$(~/.config/generate_wallpaper.sh)

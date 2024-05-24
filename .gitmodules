@@ -1,6 +1,6 @@
 [submodule "nvim"]
 	path = nvim
-	url = https://github.com/ddxtanx/nvim_setup
+	url = https://github.com/ddxtanx/nvim_setup/
 [submodule "polybar-scripts"]
 	path = polybar-scripts
 	url = https://github.com/polybar/polybar-scripts
@@ -9,4 +9,4 @@
 	url = https://github.com/Keyitdev/sddm-astronaut-theme
 [submodule "alacritty/themes"]
 	path = alacritty/themes
-	url = https://github.com/alacritty/alacritty-theme
+	url = https://github.com/alacritty/alacritty-theme/

@@ -45,9 +45,9 @@ bindsym $mod+e exec --no-startup-id wofi-emoji
 bindsym $mod+Shift+n exec swaync-client -t -sw
 bindsym $mod+Shift+s exec XDG_SCREENSHOTS_DIR=/home/ddxtanx/Screenshots/ grimshot save area
 
-bindsym XF86AudioPlay exec --no-startup-id waybar-mpris --send toggle
-bindsym XF86AudioNext exec --no-startup-id waybar-mpris --send next
-bindsym XF86AudioPrev exec --no-startup-id waybar-mpris --send prev
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next 
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous 
 
 # Bluetooth settings
 bindsym $mod+Alt+b exec sudo systemctl restart bluetooth
