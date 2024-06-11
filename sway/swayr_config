@@ -1,2 +1,3 @@
 exec env RUST_BACKTRACE=1 RUST_LOG=swayr=debug swayrd > /tmp/swayrd.log 2>&1
 bindsym $mod+Alt+Tab exec swayr switch-window
+bindsym $mod+Shift+Alt+Tab exec swayr switch-to-urgent-or-lru-window
