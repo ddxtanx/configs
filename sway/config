@@ -295,4 +295,4 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr -r
 
 # Application Autostarts
-include $HOME/.config/sway/setup_windows
+exec $HOME/.config/sway/setup_windows
