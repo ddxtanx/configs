@@ -4,7 +4,9 @@ mkdir ~/.local/state/lockscreen.lock || exit 1
 
 pkill -f "idle.sh"
 rm -rf ~/.local/state/idle.lock
+pkill -f "swayidle"
 
+echo "$(date) - Lockscreen" >> ~/.local/state/lockscreen.log
 swayidle timeout 15 '/usr/bin/swaymsg "output * dpms off"' resume '/usr/bin/swaymsg "output * dpms on"' >> ~/.local/state/idle.log 2>&1 &
 DPMS_PID=$!
 
