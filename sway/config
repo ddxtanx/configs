@@ -1,7 +1,6 @@
 include /etc/sway/config.d/*
-exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 include $HOME/.config/sway/machine_specific_config
-exec --no-startup-id /usr/lib/kdeconnectd
+exec --no-startup-id /usr/bin/kdeconnectd
 
 input type:keyboard {
         xkb_layout us
