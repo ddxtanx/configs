@@ -305,3 +305,4 @@ include $HOME/.config/sway/swayr_config
 
 # Application Autostarts
 exec $HOME/.config/sway/setup_windows
+exec sway-audio-idle-inhibit
