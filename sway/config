@@ -303,6 +303,7 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr -r
 
 include $HOME/.config/sway/swayr_config
 
+exec /usr/bin/wayland-pipewire-idle-inhibit -v INFO > ~/.local/state/pipewire-idle-inhibit.log 2>&1
 # Application Autostarts
+
 exec $HOME/.config/sway/setup_windows
-exec sway-audio-idle-inhibit
