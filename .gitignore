@@ -33,3 +33,5 @@ sway/machine_specific_config
 sway/setup_windows
 !bottom
 !spotifyd
+!wayland-pipewire-idle-inhibit
+!wayland-pipewire-idle-inhibit/*

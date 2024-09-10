@@ -1,0 +1,7 @@
+media_minimum_duration = 30
+[[sink_whitelist]]
+name = "WH-1000XM5"
+
+[[node_blacklist]]
+name = ".*[Kk]onversation"
+app_name = ".*[Kk]onversation"
