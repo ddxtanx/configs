@@ -2,6 +2,9 @@ media_minimum_duration = 30
 [[sink_whitelist]]
 name = "WH-1000XM5"
 
+[[sink_whitelist]]
+name = "MacBook Pro J316 Speakers"
+
 [[node_blacklist]]
 name = ".*[Kk]onversation"
 app_name = ".*[Kk]onversation"
