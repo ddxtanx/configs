@@ -32,7 +32,7 @@ for_window [app_id="zoom" title="Zoom Meeting"] floating disable
 
 for_window [app_id="zoom" title="Zoom - Free Account"] floating disable
 
-bindsym $mod+Return exec --no-startup-id alacritty -e $HOME/.config/zellij/.start_zellij.sh
+bindsym $mod+Return exec --no-startup-id wezterm 
 
 # Window kill command
 bindsym $mod+q kill
@@ -307,3 +307,4 @@ exec /usr/bin/wayland-pipewire-idle-inhibit -v INFO > ~/.local/state/pipewire-id
 # Application Autostarts
 
 exec $HOME/.config/sway/setup_windows
+

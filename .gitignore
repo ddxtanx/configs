@@ -35,3 +35,5 @@ sway/setup_windows
 !spotifyd
 !wayland-pipewire-idle-inhibit
 !wayland-pipewire-idle-inhibit/*
+!wezterm
+!wezterm/*
