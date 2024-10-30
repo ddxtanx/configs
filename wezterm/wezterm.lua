@@ -6,8 +6,7 @@ config.leader = { key = "a", mods = "CTRL" }
 config.enable_kitty_keyboard = true
 config.animation_fps = 60
 config.front_end = "WebGpu"
-config.window_background_opacity = 0.9
-config.text_background_opacity = 0.9
+config.window_background_opacity = 0.985
 config.leader = {
 	key = "a",
 	mods = "CTRL",
