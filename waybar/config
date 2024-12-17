@@ -169,7 +169,7 @@
     },
     "custom/notification": {
         "tooltip": false,
-        "format": "{icon} {}",
+        "format": "{0} {icon}",
         "format-icons": {
           "notification": "<span foreground='red'><sup></sup></span>",
           "none": "",
