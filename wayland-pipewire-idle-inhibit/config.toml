@@ -1,9 +1,13 @@
-media_minimum_duration = 30
+media_minimum_duration = 5
+
 [[sink_whitelist]]
 name = "WH-1000XM5"
 
 [[sink_whitelist]]
 name = "MacBook Pro J316 Speakers"
+
+[[sink_whitelist]]
+name = "Garrett's AirPods Pro #2"
 
 [[node_blacklist]]
 name = ".*[Kk]onversation"
