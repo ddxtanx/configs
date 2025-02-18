@@ -298,8 +298,6 @@ for_window [app_id="^.*"] inhibit_idle fullscreen
 
 exec $HOME/.config/sway/idle.sh 
 exec ~/.local/opt/start_programs.sh
-exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr -r
 
 include $HOME/.config/sway/swayr_config
 

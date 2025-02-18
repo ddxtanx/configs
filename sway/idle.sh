@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "$(date) - idle.sh called" >> /home/ddxtanx/.local/state/idle.log
 mkdir /home/ddxtanx/.local/state/idle.lock || exit 1
 echo "$(date) - idle.sh started" >> /home/ddxtanx/.local/state/idle.log
