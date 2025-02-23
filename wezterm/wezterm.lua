@@ -3,7 +3,6 @@ local config = wezterm.config_builder()
 config.color_scheme = "Tokyo Night Storm"
 config.font = wezterm.font("Hasklug Nerd Font Mono")
 config.leader = { key = "a", mods = "CTRL" }
-config.enable_kitty_keyboard = true
 config.animation_fps = 60
 config.front_end = "WebGpu"
 config.window_background_opacity = 0.985
