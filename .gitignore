@@ -38,3 +38,4 @@ sway/setup_windows
 !wezterm/*
 !rio
 !rio/*
+!rio/themes/*
