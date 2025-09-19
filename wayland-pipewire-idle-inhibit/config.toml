@@ -4,6 +4,9 @@ media_minimum_duration = 5
 name = "WH-1000XM5"
 
 [[sink_whitelist]]
+name = "WH-1000XM6"
+
+[[sink_whitelist]]
 name = "MacBook Pro J316 Speakers"
 
 [[sink_whitelist]]

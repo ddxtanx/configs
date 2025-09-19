@@ -3,7 +3,6 @@ local config = wezterm.config_builder()
 config.color_scheme = "Tokyo Night Storm"
 config.font = wezterm.font("Hasklug Nerd Font Mono")
 config.leader = { key = "a", mods = "CTRL" }
-config.animation_fps = 60
 config.front_end = "WebGpu"
 config.enable_wayland = true
 config.window_background_opacity = 0.985
@@ -121,7 +120,6 @@ config.keys = {
 	{ key = "f", mods = "SHIFT|CTRL", action = act.Search("CurrentSelectionOrEmptyString") },
 	{ key = "f", mods = "LEADER", action = act.Search("CurrentSelectionOrEmptyString") },
 	{ key = "k", mods = "SHIFT|CTRL", action = act.ClearScrollback("ScrollbackOnly") },
-	{ key = "k", mods = "LEADER", action = act.ClearScrollback("ScrollbackOnly") },
 	{ key = "l", mods = "SHIFT|CTRL", action = act.ShowDebugOverlay },
 	{ key = "m", mods = "SHIFT|CTRL", action = act.Hide },
 	{ key = "m", mods = "LEADER", action = act.Hide },
@@ -211,7 +209,6 @@ config.key_tables = {
 		{ key = "g", mods = "CTRL", action = act.CopyMode("Close") },
 		{ key = "h", mods = "NONE", action = act.CopyMode("MoveLeft") },
 		{ key = "j", mods = "NONE", action = act.CopyMode("MoveDown") },
-		{ key = "k", mods = "NONE", action = act.CopyMode("MoveUp") },
 		{ key = "l", mods = "NONE", action = act.CopyMode("MoveRight") },
 		{ key = "m", mods = "ALT", action = act.CopyMode("MoveToStartOfLineContent") },
 		{ key = "o", mods = "NONE", action = act.CopyMode("MoveToSelectionOtherEnd") },
@@ -252,5 +249,4 @@ config.key_tables = {
 	},
 }
 
-config.webgpu_power_preference = "HighPerformance"
 return config

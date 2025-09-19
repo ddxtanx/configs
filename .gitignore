@@ -36,3 +36,5 @@ sway/setup_windows
 !wayland-pipewire-idle-inhibit/*
 !wezterm
 !wezterm/*
+!rio
+!rio/*
