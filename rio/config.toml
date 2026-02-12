@@ -167,7 +167,8 @@ decorations = "enabled"
 # Example:
 [renderer]
 performance = "high"
-# backend = "automatic"
+backend = "Vulkan"
+target-fps = 144
 # disable-unfocused-render = false
 # level = 1
 # filters = []

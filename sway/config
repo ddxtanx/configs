@@ -87,6 +87,7 @@ bindsym $mod+b workspace back_and_forth
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen
+bindsym $mod+Shift+f swaymsg floating toggle, resize set width 100ppt height 97ppt
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout toggle stacking
@@ -302,6 +303,7 @@ include $HOME/.config/sway/swayr_config
 
 exec /usr/bin/wayland-pipewire-idle-inhibit -v INFO > ~/.local/state/pipewire-idle-inhibit.log 2>&1
 # Application Autostarts
-
+exec wl-paste -t text --watch clipman store --no-persist
+for_window [shell="xwayland"] title_format "[XWayland] %title"
 exec $HOME/.config/sway/setup_windows
 
