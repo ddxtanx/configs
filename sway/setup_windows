@@ -1,0 +1,28 @@
+#!/bin/bash
+#wait for gnome-keyring-daemon to start
+until pgrep -f gnome-keyring-daemon; do
+    echo "Waiting for gnome-keyring-daemon to start..."
+    sleep 1
+done
+until pgrep -f waybar; do
+    echo "Waiting for waybar"
+    sleep 1
+done
+until nc -zw1 google.com 443; do
+    echo "Waiting for network to be up..."
+    sleep 1
+done
+
+gtk-launch org.wezfurlong.wezterm 
+gtk-launch firefox 
+gtk-launch org.gnome.Evolution 
+gtk-launch vesktop 
+
+sleep 5
+
+swaymsg '[app_id="org.wezfurlong.wezterm"]' move container to workspace 1 >> ~/.local/state/autolaunch.log 2>&1
+swaymsg '[app_id="firefox"]' move container to workspace 2 >> ~/.local/state/autolaunch.log 2>&1
+swaymsg '[app_id="org.gnome.Evolution"]' move container to workspace 3 >> ~/.local/state/autolaunch.log 2>&1
+swaymsg '[app_id="vesktop"]' move container to workspace 4 >> ~/.local/state/autolaunch.log 2>&1
+
+

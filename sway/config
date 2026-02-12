@@ -283,9 +283,9 @@ gaps outer 20
 # set power-manager and volume control
 exec --no-startup-id mate-power-manager
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 6.25%+ unmute
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 6.25%- unmute
-bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5 #to increase 5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5 #to decrease 5%
+bindsym XF86AudioMute exec --no-startup-id pamixer -t 
 
 # touchpad on and off controller on laptop with Fn+<touchpad control functional key>
 bindsym XF86TouchpadOn exec --no-startup-id synclient Touchpadoff=0
