@@ -39,3 +39,5 @@ sway/setup_windows
 !rio
 !rio/*
 !rio/themes/*
+!texmf
+!texmf/*

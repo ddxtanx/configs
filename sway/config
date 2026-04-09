@@ -42,7 +42,6 @@ bindsym $mod+space exec --no-startup-id wofi --show drun
 bindsym $mod+Shift+space exec --no-startup-id wofi --show run
 bindsym $mod+Ctrl+space exec --no-startup-id python3 $HOME/.config/sway/wofi-window.py
 bindsym $mod+e exec --no-startup-id wofi-emoji
-bindsym $mod+Shift+n exec swaync-client -t -sw
 bindsym $mod+Shift+s exec XDG_SCREENSHOTS_DIR=/home/ddxtanx/Screenshots/ grimshot save area
 
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
