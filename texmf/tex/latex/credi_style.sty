@@ -1,0 +1,107 @@
+\ProvidesPackage{credi_style}
+
+\RequirePackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\RequirePackage{
+  amsmath, enumerate,	graphicx, mathtools, tikz, tikz-cd, 
+  amssymb,	% extended symbol collection; includes amsfonts
+  amsthm,		% helps with theorem like structures
+  float,		% allows for figure placement
+}	
+\RequirePackage{unicode-math}
+\RequirePackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\RequirePackage{color}
+\RequirePackage{bbm}
+\RequirePackage{mathrsfs}
+\RequirePackage{thmtools}
+\RequirePackage{zref-clever}
+\RequirePackage[
+  backend=biber,
+  style=alphabetic,
+  url=true,
+  doi=true,
+  isbn=true,
+  backref=true
+]{biblatex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % We use newtheorem to define theorem-like structures
+% %
+% % Here are some common ones. . .
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+
+\newtheorem{convention}[theorem]{Convention}
+\newtheorem{remark}[theorem]{Remark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % New commands
+\newcommand{\Cat}[1]{\mathscr{#1}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\Set}{\mathrm{Set}}
+\newcommand{\Ring}{\mathrm{Ring}}
+\newcommand{\Top}{\mathrm{Top}}
+\newcommand{\Grp}{\mathrm{Grp}}
+\newcommand{\Ab}{\mathrm{Ab}}
+\newcommand{\op}[1]{#1^{\mathrm{op}}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\colim}{\operatorname{colim}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\Tor}{\operatorname{Tor}}
+\newcommand{\hocolim}{\operatorname{hocolim}}
+\newcommand{\holim}{\operatorname{holim}}
+\newcommand{\cof}{\operatorname{cof}}
+\newcommand{\fib}{\operatorname{fib}}
+\newcommand{\ev}{\mathrm{ev}}
+\newcommand{\coker}{\operatorname{coker}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Coker}{\operatorname{Coker}}
+\newcommand{\Sp}{\mathrm{Sp}}
+\newcommand{\sh}{\operatorname{sh}}
+\newcommand{\ho}{\operatorname{ho}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\Ch}{\operatorname{Ch}}
+\newcommand{\DD}{\mathscr{D}}
+\newcommand{\Mod}[1]{#1\text{-}\mathrm{Mod}}
+\newcommand{\OO}{\mathscr{O}}
+\newcommand{\EEs}{\mathscr{E}}
+\newcommand{\FFs}{\mathscr{F}}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\tr}{\operatorname{tr}}
+\renewcommand{\AA}{\mathbb{A}}
+\renewcommand{\SS}{\mathbb{S}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\LL}{\Lambda}
+\newcommand{\frakp}{\mathfrak{p}}
+\newcommand{\Sq}{\mathrm{Sq}}
+\renewcommand{\Im}{\operatorname{Im}}
+\newcommand{\scrN}{\mathscr{N}}
+\newcommand{\EInfty}{\mathscr{E}_\infty}
+\newcommand{\NInfty}{\mathscr{N}_\infty}
+\renewcommand{\u}[1]{\underline{#1}}
+\newcommand{\Orb}{\mathrm{Orb}}
+\newcommand{\Mack}{\mathrm{Mack}}
+\newcommand{\Com}{\mathrm{Com}}
+\newcommand{\AugAlg}[2]{#1\text{-}\mathrm{Alg}_{/#2}}
+\newcommand{\uAugAlg}[2]{#1\text{-}\underline{\mathrm{Alg}}_{/#2}}
+\newcommand{\Der}{\operatorname{Der}}
+\newcommand{\uCoeff}{\underline{\mathrm{Coeff}}}
+\newcommand{\uSet}{\underline{\mathrm{Set}}}
+\newcommand{\Res}[2]{\operatorname{Res}_{#1}^{#2}}
+\newcommand{\Tr}[2]{\operatorname{Tr}_{#1}^{#2}}
+\newcommand{\Fun}{\operatorname{Fun}}
+
+\endinput
