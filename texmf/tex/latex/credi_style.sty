@@ -3,16 +3,18 @@
 \RequirePackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \RequirePackage{
   amsmath, enumerate,	graphicx, mathtools, tikz, tikz-cd, 
-  amssymb,	% extended symbol collection; includes amsfonts
-  amsthm,		% helps with theorem like structures
-  float,		% allows for figure placement
+  amssymb,	
+  amsthm,		
+  float,		
 }	
+\RequirePackage{mathrsfs}
+\RequirePackage{fontspec}
 \RequirePackage{unicode-math}
 \RequirePackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
 \RequirePackage{color}
 \RequirePackage{bbm}
-\RequirePackage{mathrsfs}
 \RequirePackage{thmtools}
+\RequirePackage{stmaryrd}
 \RequirePackage{zref-clever}
 \RequirePackage[
   backend=biber,
@@ -49,7 +51,7 @@
 \newcommand{\id}{\mathrm{id}}
 \newcommand{\Set}{\mathrm{Set}}
 \newcommand{\Ring}{\mathrm{Ring}}
-\newcommand{\Top}{\mathrm{Top}}
+\newcommand{\Top}{\mathscr{Top}}
 \newcommand{\Grp}{\mathrm{Grp}}
 \newcommand{\Ab}{\mathrm{Ab}}
 \newcommand{\op}[1]{#1^{\mathrm{op}}}
@@ -66,7 +68,7 @@
 \newcommand{\coker}{\operatorname{coker}}
 \newcommand{\Ker}{\operatorname{Ker}}
 \newcommand{\Coker}{\operatorname{Coker}}
-\newcommand{\Sp}{\mathrm{Sp}}
+\newcommand{\Sp}{\mathscr{Sp}}
 \newcommand{\sh}{\operatorname{sh}}
 \newcommand{\ho}{\operatorname{ho}}
 \newcommand{\QQ}{\mathbb{Q}}
@@ -78,6 +80,7 @@
 \newcommand{\Mod}[1]{#1\text{-}\mathrm{Mod}}
 \newcommand{\OO}{\mathscr{O}}
 \newcommand{\EEs}{\mathscr{E}}
+\newcommand{\EE}{\mathbb{E}}
 \newcommand{\FFs}{\mathscr{F}}
 \newcommand{\res}{\operatorname{res}}
 \newcommand{\tr}{\operatorname{tr}}
@@ -93,15 +96,23 @@
 \newcommand{\NInfty}{\mathscr{N}_\infty}
 \renewcommand{\u}[1]{\underline{#1}}
 \newcommand{\Orb}{\mathrm{Orb}}
-\newcommand{\Mack}{\mathrm{Mack}}
+\newcommand{\Mack}{\mathscr{Mack}}
+\newcommand{\gen}{\mathrm{gen}}
+\newcommand{\Sym}{\mathscr{Sym}}
+\newcommand{\Tamb}{\mathscr{Tamb}}
 \newcommand{\Com}{\mathrm{Com}}
 \newcommand{\AugAlg}[2]{#1\text{-}\mathrm{Alg}_{/#2}}
 \newcommand{\uAugAlg}[2]{#1\text{-}\underline{\mathrm{Alg}}_{/#2}}
 \newcommand{\Der}{\operatorname{Der}}
 \newcommand{\uCoeff}{\underline{\mathrm{Coeff}}}
+\newcommand{\Coeff}{\mathrm{Coeff}}
 \newcommand{\uSet}{\underline{\mathrm{Set}}}
 \newcommand{\Res}[2]{\operatorname{Res}_{#1}^{#2}}
 \newcommand{\Tr}[2]{\operatorname{Tr}_{#1}^{#2}}
+\newcommand{\CoInd}[2]{\operatorname{CoInd}_{#1}^{#2}}
+\newcommand{\CoRes}[2]{\operatorname{CoRes}_{#1}^{#2}}
 \newcommand{\Fun}{\operatorname{Fun}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Fin}{\mathscr{Fin}}
 
 \endinput
