@@ -12,7 +12,7 @@ DPMS_PID=$!
 
 WALLPAPER=$(~/.config/generate_wallpaper.sh)
 
-~/.config/sway/create_lockscreen.sh "$WALLPAPER"
+~/.config/sway/create_lockscreen.sh "$WALLPAPER" >> ~/.local/state/lockscreen.log 2>&1
 
 kill $DPMS_PID
 ~/.config/sway/idle.sh &

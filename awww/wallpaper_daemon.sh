@@ -17,7 +17,7 @@ increase_wait
 SLEEP_PID=-1
 
 while true; do
-    $HOME/.config/mpvpaper/randomize_wallpaper.sh
+    $HOME/.config/awww/randomize_wallpaper.sh
     while [ $(date +%s) -lt $NEXT_TIME ]; do
         SLEEP_FOR=$((NEXT_TIME - $(date +%s)))
         sleep $SLEEP_FOR &

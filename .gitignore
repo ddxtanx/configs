@@ -22,10 +22,8 @@ alacritty
 !zellij/*
 !swaybg
 !swaybg/*
-!swww
-!swww/*
-!mpvpaper
-!mpvpaper/*
+!awww
+!awww/*
 !generate_wallpaper.sh
 !wallpaper_display_command.sh
 sway/machine_specific_config
