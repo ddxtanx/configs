@@ -4,4 +4,4 @@ NEXT_WALLPAPER=$1
 # echo "$GL_FLAGS mpvpaper \
 #   -p -o \"loop profile=gpu-hq vo=gpu-next hwdec=auto-copy target-colorspace-hint=yes\" \
 #   \"$MONITOR\" $NEXT_WALLPAPER &"
-/home/ddxtanx/.local/bin/awww img $NEXT_WALLPAPER -t random --transition-duration 1
+awww img $NEXT_WALLPAPER -t random --transition-duration 1 --resize fit

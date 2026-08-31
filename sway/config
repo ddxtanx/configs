@@ -15,7 +15,7 @@ hide_edge_borders none
 focus_follows_mouse no
 
 exec --no-startup-id /usr/bin/rm -rf ~/.local/state/*.lock
-exec --no-startup-id $HOME/.local/bin/awww-daemon
+exec --no-startup-id awww-daemon
 exec --no-startup-id ~/.config/awww/wallpaper_daemon.sh > ~/.local/state/awww-daemon.log 2>&1 &
 exec --no-startup-id ~/.config/waybar/waybar.sh > ~/.local/state/waybar.log 2>&1 &
 exec --no-startup-id swaync
