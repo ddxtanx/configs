@@ -5,6 +5,7 @@ config.font = wezterm.font("Hasklug Nerd Font Mono")
 config.leader = { key = "a", mods = "CTRL" }
 config.front_end = "WebGpu"
 -- config.dpi = 96
+config.font_size = 12.0
 config.tiling_desktop_environments = { "Wayland" }
 config.enable_wayland = true
 config.window_background_opacity = 0.985
