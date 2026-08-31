@@ -251,5 +251,12 @@ config.key_tables = {
 		{ key = "DownArrow", mods = "NONE", action = act.CopyMode("NextMatch") },
 	},
 }
+config.mouse_bindings = {
+	{
+		event = { Up = { streak = 1, button = "Left" } },
+		mods = "NONE",
+		action = wezterm.action.Nop,
+	},
+}
 
 return config
