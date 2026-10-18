@@ -1,7 +1,5 @@
 *
 alacritty
-!nvim/
-!nvim/*
 !polybar/
 !polybar/*
 !i3/
