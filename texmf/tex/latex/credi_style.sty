@@ -1,30 +1,16 @@
 \ProvidesPackage{credi_style}
 
-\RequirePackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \RequirePackage{
-  amsmath, enumerate,	graphicx, mathtools, tikz, tikz-cd, 
+  amsmath, 
   amssymb,	
   amsthm,		
-  float,		
 }	
 \RequirePackage{mathrsfs}
 \RequirePackage{fontspec}
 \RequirePackage{unicode-math}
-\RequirePackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
-\RequirePackage{color}
-\RequirePackage{bbm}
 \RequirePackage{thmtools}
 \RequirePackage{stmaryrd}
-\RequirePackage{zref-clever}
-\RequirePackage[
-  backend=biber,
-  style=alphabetic,
-  url=true,
-  doi=true,
-  isbn=true,
-  backref=true
-]{biblatex}
-
+\RequirePackage{bbm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % We use newtheorem to define theorem-like structures
 % %
@@ -114,5 +100,6 @@
 \newcommand{\Fun}{\operatorname{Fun}}
 \newcommand{\Aut}{\operatorname{Aut}}
 \newcommand{\Fin}{\mathscr{Fin}}
+\newcommand{\ab}{\operatorname{ab}}
 
 \endinput
